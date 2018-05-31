@@ -13,21 +13,9 @@ Minimum Requirements
 
 Installation
 ------------
-* Add the VCS repository to your composer.json
 
-```json
-[...]
-"repositories": [
-    [...]
-    {
-        "type": "vcs",
-        "url": "https://svn.tam.ch/document-engine-client"
-    }
-],
-[...]
-```
+* Install via composer 
 
-* Add the package to your composer.json
 ```sh
 composer require gyselroth/document-engine-client:dev-trunk
 ```
@@ -57,7 +45,7 @@ $client = new Gyselroth\DocumentEngine\Client([
 $client = new Gyselroth\DocumentEngine\Client([
     'baseUrl' => 'https://docengine.example.com',
     'authenticationType' => 'bearer',
-    'token'    => 'dGVzdGJlYXJlcnRva2VuCg',
+    'token'    => 'aBCdeFGHIJKlmnOpq1RsTu',
     'password'    => 'bar'
 ]);
 ```
