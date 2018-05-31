@@ -1,0 +1,44 @@
+{
+    "name": "gyselroth/document-engine-client",
+    "description": "PHP client for the document engine web service",
+    "keywords": ["document", "rest", "service", "client", "psr7"],
+    "homepage": "http://www.gyselroth.com",
+    "type":  "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "gyselroth GmbH",
+            "email": "info@gyselroth.com",
+            "homepage": "http://www.gyselroth.com/"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "ext-json": "*",
+        "ext-spl": "*",
+        "gyselroth/helper": "dev-trunk",
+        "guzzlehttp/guzzle": "~6.0",
+        "psr/http-message": ">=1.0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.8 < 6.0",
+    },
+    "autoload": {
+        "psr-4": {
+            "Gyselroth\\DocumentEngine\\": "src/Gyselroth/DocumentEngine/"
+        }
+    },
+    "config": {
+        "process-timeout" : 0
+    },
+    "scripts": {
+        "test": "phpunit tests/",
+        "unittest": "phpunit tests/Unit",
+        "systemtest": "phpunit tests/System"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.0"
+        }
+    }
+}
