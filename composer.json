@@ -16,7 +16,7 @@
         "php": ">=7.1.0",
         "ext-json": "*",
         "ext-spl": "*",
-        "gyselroth/php-helper": "0.1.*@dev",
+        "gyselroth/php-helper": "dev-trunk@dev",
         "guzzlehttp/guzzle": "~6.0",
         "psr/http-message": ">=1.0.1"
     },
